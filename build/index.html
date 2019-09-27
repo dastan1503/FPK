@@ -4,10 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <title>Доставка еды</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <h1 class="visually-hidden">Трансферный заказ еды</h1>
+  <header class="header">
+    <a href="" class="header-logo"></a>
+    <nav class="header__nav">
+      <button class="header-burger"></button>
+      <ul class="header__nav-list">
+
+      </ul>
+    </nav>
+    <a href="">просмотреть заказ</a>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="promo-wrapper">
+        <div class="swiper-slide">
+          <img src="">
+          <span></span>
+        </div>
+        <div class="swiper-slide">
+          <img src="">
+          <span></span>
+        </div>
+        <div class="swiper-slide">
+          <img src="">
+          <span></span>
+        </div>
+      </div>
+      <div class="pagination"></div>
+    </section>
+    <section class="form">
+
+      <div class="form-authorize">
+        <label for="person">Введите номер билета</label>
+        <input type="number" required="" id="person">
+        <button>Далее</button>
+      </div>
+
+      <div class="form-deliver-To">
+        <button>Назад</button>
+        <label for="station">Выберите станцию доставки</label>
+        <select>
+          <option>Пасс время: 12:00</option>
+          <option>груз время: 18:00</option>
+        </select>
+        <button>Далее</button>
+      </div>
+
+      <div class="form-filter">
+        <button>Назад</button>
+          <a href="">все</a>
+          <a href="">закуски</a>
+          <a href="">пицца</a>
+          <a href="">сушироллы</a>
+          <a href="">Десерты</a>
+          <a href="">Кошерное меню</a>
+          <a href="">Халяльное меню</a>
+          <a href="">Детское меню</a>
+      </div>
+
+      <div class="price">
+        <button>Назад</button>
+        <tempate>
+          <div>
+            <img src="">
+            <span class="cost"></span>
+            <label for="count">Количество</label>
+            <input type="number" name="count">
+            <span class="total"></span>
+          </div>
+        </tempate>
+        <button>Добавить в корзину</button>
+      </div>
+
+      
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
