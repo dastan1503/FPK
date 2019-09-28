@@ -1,17 +1,32 @@
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Robotomedium.woff") format("woff"), url("../fonts/Robotomedium.woff2") format("woff2");
-  font-weight: 500;
+  src: url("../fonts/Roboto.woff") format("woff"), url("../fonts/Roboto.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Robotobold.woff") format("woff"), url("../fonts/Robotobold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/ralewaybold.woff") format("woff"), url("../fonts/ralewaybold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 body {
+  position: relative;
   margin: 0 auto;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: $font-rob;
   color: #666666;
   font-weight: 400;
   background-color: #ffffff;
@@ -33,4 +48,13 @@ img {
 a {
   color: #666666;
   text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.main {
+  width: 100%;
 }

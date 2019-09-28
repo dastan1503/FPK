@@ -1,0 +1,22 @@
+.header {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  min-height: 40px;
+  background-color: $bg-red;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  filter: invert(1);
+}
+
+.header-cart {
+  display: flex;
+  align-items: center;
+
+  & span {
+    margin-right: 10px;
+  }
+}

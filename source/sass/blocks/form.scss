@@ -1,0 +1,24 @@
+.form {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  background-color: #ffffff;
+  color: $bg-red;
+  font-family: $font-rale;
+  font-weight: normal;
+}
+
+.form > div {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.form label {
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+}

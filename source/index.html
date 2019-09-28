@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Доставка еды</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1 class="visually-hidden">Трансферный заказ еды</h1>
-  <header class="header">
-    <a href="" class="header-logo"></a>
-    <nav class="header__nav">
-      <button class="header-burger"></button>
-      <ul class="header__nav-list">
 
-      </ul>
-    </nav>
-    <a href="">просмотреть заказ</a>
+  <header class="header">
+    <a href="" class="header-logo">
+      <span class="visually-hidden">На главную</span>
+      <img width="40" height="40" src="img/logo.png">
+    </a>
+    <a href="" class="header-cart">
+      <span class="count-of-food">1</span>
+      <img width="40" height="40" src="img/cart.png">
+    </a>
   </header>
-  <main>
+  <main class="main">
+    <h1 class="visually-hidden">Трансферный заказ еды</h1>
+<!--
     <section class="promo">
       <div class="promo-wrapper">
         <div class="swiper-slide">
@@ -37,26 +39,29 @@
       </div>
       <div class="pagination"></div>
     </section>
+-->
     <section class="form">
 
-      <div class="form-authorize">
+      <div class="form-authorize form-activeScreen">
         <label for="person">Введите номер билета</label>
-        <input type="number" required id="person">
-        <button>Далее</button>
+        <input type="text" pattern="/\d{11}/" required id="person">
+        <button type="button" class="button-next">Далее</button>
       </div>
 
-      <div class="form-deliver-To">
-        <button>Назад</button>
+      <div class="form-deliver-To visually-hidden">
+        <button class="button-prev">Назад</button>
         <label for="station">Выберите станцию доставки</label>
         <select>
-          <option>Пасс время: 12:00</option>
+          <option checked>Пасс время: 12:00</option>
           <option>груз время: 18:00</option>
         </select>
-        <button>Далее</button>
+        <button class="button-next">Далее</button>
       </div>
 
-      <div class="form-filter">
-        <button>Назад</button>
+      <div class="form-filter visually-hidden">
+        <button class="button-prev">Назад</button>
+          <label for="all">все</label>
+          <input type="radio" id="all">
           <a href="">все</a>
           <a href="">закуски</a>
           <a href="">пицца</a>
@@ -65,10 +70,11 @@
           <a href="">Кошерное меню</a>
           <a href="">Халяльное меню</a>
           <a href="">Детское меню</a>
+        <button class="button-next">Далее</button>
       </div>
 
-      <div class="price">
-        <button>Назад</button>
+      <div class="price visually-hidden">
+        <button class="button-prev">Назад</button>
         <tempate>
           <div>
             <img src="">
@@ -78,14 +84,16 @@
             <span class="total"></span>
           </div>
         </tempate>
-        <button>Добавить в корзину</button>
+        <button class="add-to-cart">Добавить в корзину</button>
       </div>
 
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
 
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
